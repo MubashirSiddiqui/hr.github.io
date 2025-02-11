@@ -2522,7 +2522,7 @@ a.btn.bat-call-to-act:hover {
 }
 .download-app {
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
   padding-bottom: 0;
   overflow: hidden;
