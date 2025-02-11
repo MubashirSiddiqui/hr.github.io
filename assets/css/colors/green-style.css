@@ -78,6 +78,9 @@ border-color:#07b107;
 .download-app:before {
     background: #07b107;
 }
+.download-appp:before {
+    background: #ececec;
+}
 .app-content a.btn.call-btn:hover {
     color: #07b107;
 }
