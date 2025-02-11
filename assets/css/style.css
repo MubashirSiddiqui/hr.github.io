@@ -2527,6 +2527,13 @@ a.btn.bat-call-to-act:hover {
   padding-bottom: 0;
   overflow: hidden;
 }
+.download-appp {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding-bottom: 0;
+  overflow: hidden;
+}
 .download-app:before {
   background: #11b719;
   position: absolute;
@@ -2539,9 +2546,27 @@ a.btn.bat-call-to-act:hover {
   top: 0;
   bottom: 0;
 }
+.special-section .download-app:before {
+  background: #dddddd; /* Override color (e.g., orange) */
+  opacity: 0.9;
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+
+}
 .download-app .heading {
   margin-bottom: 0.5em;
 }
+.download-appp .heading {
+  margin-bottom: 0.5em;
+}
+
 .app-content {
   text-align: left;
   margin-bottom: 6em;
@@ -2556,13 +2581,25 @@ a.btn.bat-call-to-act:hover {
   font-weight: 400;
   font-family: Montserrat, sans-serif;
 }
+
 .app-content h4 {
   font-size: 22px;
   text-transform: uppercase;
 }
+.app-content h4p {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
 .app-content p {
   font-size: 16px;
   color: #fff;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.app-content pp {
+  font-size: 16px;
+  color: #1d1d1d;
   line-height: 1.8;
   margin-top: 20px;
 }
@@ -2582,11 +2619,26 @@ a.btn.bat-call-to-act:hover {
   margin-bottom: 10px;
   font-family: Montserrat, sans-serif;
 }
+.app-content a.btn.call-btn {
+  border-radius: 4px;
+  padding: 0.6em 1.4em;
+  margin-right: 20px;
+  text-transform: uppercase;
+  background: 0 0;
+  border: 1px dashed #fff;
+  transition: all ease-in-out 0.4s;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+}
 .app-content a.btn.call-btn:hover {
   background: #fff;
   color: #11b719;
 }
 .download-app img {
+  margin: 0 auto;
+}
+.download-appp img {
   margin: 0 auto;
 }
 .footer {
@@ -6690,6 +6742,11 @@ ul.social-share li > a.be-share {
     padding-top: 3em;
   }
   .download-app img {
+    position: absolute;
+    max-width: 80%;
+    left: 10%;
+  }
+  .download-appp img {
     position: absolute;
     max-width: 80%;
     left: 10%;
