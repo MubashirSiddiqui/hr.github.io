@@ -2530,7 +2530,7 @@ a.btn.bat-call-to-act:hover {
 .download-app:before {
   background: #11b719;
   position: absolute;
-  opacity: 0.9;
+  opacity: 0.6;
   content: "";
   display: block;
   height: 100%;
