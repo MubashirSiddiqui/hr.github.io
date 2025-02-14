@@ -1607,6 +1607,11 @@ html {
     margin-right: -15px;
     margin-left: -15px;
   }
+
+  .slide {
+    margin-right: 300px;
+    margin-left: 95px;
+  }
   .col-lg-1,
   .col-lg-10,
   .col-lg-11,
@@ -6866,6 +6871,12 @@ html {
     display: table;
     content: " ";
   }
+  .rowslide:after,
+  .rowslide:before {
+    display: table;
+    content: " ";
+  }
+
   .btn-group-vertical > .btn-group:after,
   .btn-toolbar:after,
   .clearfix:after,
@@ -6882,6 +6893,9 @@ html {
   .pager:after,
   .panel-body:after,
   .row:after {
+    clear: both;
+  }
+  .rowslide:after {
     clear: both;
   }
   .center-block {
@@ -7885,6 +7899,7 @@ html {
     > .btn {
     border-radius: 0;
   }
+
   .bootstrap-select.btn-group:not(.input-group-btn),
   .bootstrap-select.btn-group[class*="col-"] {
     float: none;
@@ -7894,6 +7909,9 @@ html {
   .bootstrap-select.btn-group.dropdown-menu-right,
   .bootstrap-select.btn-group[class*="col-"].dropdown-menu-right,
   .row .bootstrap-select.btn-group[class*="col-"].dropdown-menu-right {
+    float: right;
+  }
+  .rowslide .bootstrap-select.btn-group[class*="col-"].dropdown-menu-right {
     float: right;
   }
   .form-group .bootstrap-select.btn-group,
