@@ -7578,7 +7578,7 @@ a.cl-box.pink {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #c6f2c5;
+  background-color: #35434e;
 }
 .text-container {
   width: 100%;
@@ -7590,15 +7590,15 @@ a.cl-box.pink {
   font-weight: 700;
   -webkit-text-stroke-width: 3px;
   stroke-width: 3px;
-  -webkit-text-stroke-color: #003D4B;
-  stroke: #003D4B;
-  color: #00384E;
+  -webkit-text-stroke-color: #fbfdff;
+  stroke: #fff;
+  color: #fff;
   white-space: nowrap;
   margin: 150px 0;
   font-size: 12rem;
 }
 .techbox{
-  background-color: #c6f2c5;
+  background-color: #e9eced;
   padding: 40px;
   border-radius: 20px;
   margin-bottom: 50px;
@@ -7615,7 +7615,7 @@ a.cl-box.pink {
   line-height: 30px;
 }
 .policiesSec ul li{
-  color: #0097ba;
+  color: #07b107;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -7634,7 +7634,7 @@ a.cl-box.pink {
 }
 .policiesSec ul li i{
   font-size: 18px;
-  color: #0097ba;
+  color: #07b107;
   margin-right: 5px;
 }
 .requestProposal p{
@@ -7643,14 +7643,14 @@ a.cl-box.pink {
   line-height: 26px;
 }
 .requestProposal a{
-  background-color: #0097ba;
+  background-color: #07b107;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 1.250vw;
   border-style: solid;
   border-width: 0.058vw 0.058vw 0.058vw 0.058vw;
-  border-color: #0097ba;
+  border-color: #07b107;
   border-radius: 50px;
   padding: 10px 20px;
   color: #fff;
