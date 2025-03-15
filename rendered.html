@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        .job-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .job {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .apply-btn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Openings</h1>
+    <p id="total-jobs">0 Open Positions</p>
+    <div class="container">
+        <div class="job-list" id="job-list"></div>
+    </div>
+
+    <script>
+        async function fetchJobs() {
+            try {
+                let response = await fetch('img/data.json');
+                let jobs = await response.json();
+                renderJobs(jobs);
+            } catch (error) {
+                console.error('Error fetching jobs:', error);
+            }
+        }
+
+        function renderJobs(jobs) {
+            const jobList = document.getElementById('job-list');
+            jobList.innerHTML = '';
+            document.getElementById('total-jobs').textContent = `${jobs.length} Open Positions`;
+            jobs.forEach(job => {
+                let jobDiv = document.createElement('div');
+                jobDiv.classList.add('job');
+                jobDiv.innerHTML = `
+                    <div>
+                        <strong>${job.title}</strong>
+                        <p>📍 ${job.location}</p>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                `;
+                jobList.appendChild(jobDiv);
+            });
+        }
+        
+        fetchJobs();
+    </script>
+</body>
+</html>

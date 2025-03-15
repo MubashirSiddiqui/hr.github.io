@@ -10723,7 +10723,7 @@ html {
     position: fixed;
     display: block;
     width: 100%;
-    z-index: 222;
+    z-index: 1000;
   }
   nav.navbar.bootsnav.no-background {
     -webkit-transition: all 1s ease-in-out;
