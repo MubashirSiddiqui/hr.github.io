@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'creativesplanet-base-icons';
-  src: url('../font/creativesplanet-base-icons.eot?61036988');
-  src: url('../font/creativesplanet-base-icons.eot?61036988#iefix') format('embedded-opentype'),
-       url('../font/creativesplanet-base-icons.woff2?61036988') format('woff2'),
-       url('../font/creativesplanet-base-icons.woff?61036988') format('woff'),
-       url('../font/creativesplanet-base-icons.ttf?61036988') format('truetype'),
-       url('../font/creativesplanet-base-icons.svg?61036988#creativesplanet-base-icons') format('svg');
+  src: url('./creativesplanet-base-icons.eot');
+  src: url('./creativesplanet-base-icons.eot') format('embedded-opentype'),
+       url('./creativesplanet-base-icons.woff2') format('woff2'),
+       url('./creativesplanet-base-icons.woff') format('woff'),
+       url('./creativesplanet-base-icons.ttf') format('truetype'),
+       url('./creativesplanet-base-icons.svg#creativesplanet-base-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
