@@ -1,0 +1,92 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 10/11/2020 06:12
+  	*/
+
+      @font-face {
+        font-family: "Flaticon";
+        src: url("./Flaticon.eot");
+        src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+             url("./Flaticon.woff2") format("woff2"),
+             url("./Flaticon.woff") format("woff"),
+             url("./Flaticon.ttf") format("truetype"),
+             url("./Flaticon.svg#Flaticon") format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: "Flaticon";
+          src: url("./Flaticon.svg#Flaticon") format("svg");
+        }
+      }
+      
+      [class^="cspt-emphires-icon-"]:before, [class*=" cspt-emphires-icon-"]:before,
+      [class^="cspt-emphires-icon-"]:after, [class*=" cspt-emphires-icon-"]:after {   
+        font-family: Flaticon;
+        font-style: normal;
+      }
+      
+      .cspt-emphires-icon-call:before { content: "\f100"; }
+      .cspt-emphires-icon-pdf:before { content: "\f101"; }
+      .cspt-emphires-icon-document:before { content: "\f102"; }
+      .cspt-emphires-icon-placeholder:before { content: "\f103"; }
+      .cspt-emphires-icon-placeholder-1:before { content: "\f104"; }
+      .cspt-emphires-icon-email:before { content: "\f105"; }
+      .cspt-emphires-icon-hr:before { content: "\f106"; }
+      .cspt-emphires-icon-consultation:before { content: "\f107"; }
+      .cspt-emphires-icon-hr-1:before { content: "\f108"; }
+      .cspt-emphires-icon-consulting:before { content: "\f109"; }
+      .cspt-emphires-icon-job-interview:before { content: "\f10a"; }
+      .cspt-emphires-icon-right-arrow:before { content: "\f10b"; }
+      .cspt-emphires-icon-arrow:before { content: "\f10c"; }
+      .cspt-emphires-icon-appointment:before { content: "\f10d"; }
+      .cspt-emphires-icon-placeholder-2:before { content: "\f10e"; }
+      .cspt-emphires-icon-support:before { content: "\f10f"; }
+      .cspt-emphires-icon-telephone:before { content: "\f110"; }
+      .cspt-emphires-icon-paper-plane:before { content: "\f111"; }
+      .cspt-emphires-icon-buy:before { content: "\f112"; }
+      .cspt-emphires-icon-management:before { content: "\f113"; }
+      .cspt-emphires-icon-search-engine:before { content: "\f114"; }
+      .cspt-emphires-icon-crm:before { content: "\f115"; }
+      .cspt-emphires-icon-businessman:before { content: "\f116"; }
+      .cspt-emphires-icon-content:before { content: "\f117"; }
+      .cspt-emphires-icon-setting:before { content: "\f118"; }
+      .cspt-emphires-icon-funnel:before { content: "\f119"; }
+      .cspt-emphires-icon-goal:before { content: "\f11a"; }
+      .cspt-emphires-icon-process:before { content: "\f11b"; }
+      .cspt-emphires-icon-team:before { content: "\f11c"; }
+      .cspt-emphires-icon-customer-service:before { content: "\f11d"; }
+      .cspt-emphires-icon-trophy:before { content: "\f11e"; }
+      .cspt-emphires-icon-shield:before { content: "\f11f"; }
+      .cspt-emphires-icon-risk:before { content: "\f120"; }
+      .cspt-emphires-icon-diamond:before { content: "\f121"; }
+      .cspt-emphires-icon-research:before { content: "\f122"; }
+      .cspt-emphires-icon-metrics:before { content: "\f123"; }
+      .cspt-emphires-icon-research-and-development:before { content: "\f124"; }
+      .cspt-emphires-icon-megaphone:before { content: "\f125"; }
+      .cspt-emphires-icon-call-center:before { content: "\f126"; }
+      .cspt-emphires-icon-maintenance:before { content: "\f127"; }
+      .cspt-emphires-icon-invest:before { content: "\f128"; }
+      .cspt-emphires-icon-budget:before { content: "\f129"; }
+      .cspt-emphires-icon-punctuality:before { content: "\f12a"; }
+      .cspt-emphires-icon-deal:before { content: "\f12b"; }
+      .cspt-emphires-icon-affiliate:before { content: "\f12c"; }
+      .cspt-emphires-icon-interview:before { content: "\f12d"; }
+      .cspt-emphires-icon-system:before { content: "\f12e"; }
+      .cspt-emphires-icon-growth:before { content: "\f12f"; }
+      .cspt-emphires-icon-strategy:before { content: "\f130"; }
+      .cspt-emphires-icon-interview-1:before { content: "\f131"; }
+      .cspt-emphires-icon-supplier:before { content: "\f132"; }
+      .cspt-emphires-icon-application:before { content: "\f133"; }
+      .cspt-emphires-icon-employment:before { content: "\f134"; }
+      .cspt-emphires-icon-sedentary:before { content: "\f135"; }
+      .cspt-emphires-icon-application-1:before { content: "\f136"; }
+      .cspt-emphires-icon-people:before { content: "\f137"; }
+      .cspt-emphires-icon-trainee:before { content: "\f138"; }
+      .cspt-emphires-icon-unemployment:before { content: "\f139"; }
+      .cspt-emphires-icon-digital-assistant:before { content: "\f13a"; }
+      .cspt-emphires-icon-podium:before { content: "\f13b"; }
+      .cspt-emphires-icon-digital-strategy:before { content: "\f13c"; }
+      .cspt-emphires-icon-checked:before { content: "\f13d"; }
