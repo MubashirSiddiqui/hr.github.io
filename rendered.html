@@ -1,77 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
+<!-- search-job41:11-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Openings</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .container {
-            width: 50%;
-            margin: auto;
-        }
-        .job-list {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .job {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .apply-btn {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <h1>Our Openings</h1>
-    <p id="total-jobs">0 Open Positions</p>
-    <div class="container">
-        <div class="job-list" id="job-list"></div>
-    </div>
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Job Stock - Responsive Job Portal Bootstrap Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script>
-        async function fetchJobs() {
-            try {
-                let response = await fetch('img/data.json');
-                let jobs = await response.json();
-                renderJobs(jobs);
-            } catch (error) {
-                console.error('Error fetching jobs:', error);
-            }
-        }
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="assets/plugins/css/plugins.css">
+    <link rel="stylesheet" id="cspt-all-style-css" href="style/all.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="cspt-dynamic-style-css" href="style/theme-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cspt-responsive-style-css" href="style/responsive.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cspt-icon-heading-style-1-css" href="style/icon-heading-style-1.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="style/js_composer.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cspt-emphires-icon cspt-emphires-icon-consulting" href="assets/libraries/cspt-emphires-icon/flaticon.css" type="text/css" media="all">
+<link rel='stylesheet' id='cspt-base-icons-css' href='style/creativesplanet-base-icons.css' type='text/css' media='all'/>
 
-        function renderJobs(jobs) {
-            const jobList = document.getElementById('job-list');
-            jobList.innerHTML = '';
-            document.getElementById('total-jobs').textContent = `${jobs.length} Open Positions`;
-            jobs.forEach(job => {
-                let jobDiv = document.createElement('div');
-                jobDiv.classList.add('job');
-                jobDiv.innerHTML = `
-                    <div>
-                        <strong>${job.title}</strong>
-                        <p>📍 ${job.location}</p>
-                    </div>
-                    <button class="apply-btn">Apply</button>
-                `;
-                jobList.appendChild(jobDiv);
-            });
-        }
-        
-        fetchJobs();
-    </script>
-</body>
+<link rel="stylesheet" id="cspt_emphires_icon-css" href="style/flaticon.css" type="text/css" media="all">
+
+    <!-- Custom style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
+    
+	</head>
+	<body>
+		<div class="wrapper">  
+			
+			<!-- Start Navigation -->
+		
+
+			<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+				
+				<div class="container">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i
+							class="fa fa-bars"></i></button>
+					<div class="navbar-header"><a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png"
+								class="logo logo-display" alt=""><img src="assets/img/logo-white.png"
+								class="logo logo-scrolled" alt=""></a></div>
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="=" data-out="">
+							<li><a  style="color: white;" href="rendered.html"><i aria-hidden="true"></i>Careers</a></li>
+							<li><a  style="color: white;" href="contact.html"><i aria-hidden="true"></i>Contact Us</a></li>
+
+
+							<li class="left-br"><a href="javascript:void(0)" data-toggle="modal" data-target="#signup"class="signin">Apply for Jobs</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class="dropdown megamenu-fw">
+								<a  style="color: white;" href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+								<ul class="dropdown-menu megamenu-content" role="menu">
+									<li>
+										<div class="col-menu ">
+											<!---  <h6 class="title">Main Pages</h6>-->
+	
+											<div class="content">
+												<ul class="menu-col">
+													<li><a href="technical-interview.html">Technical Recruitment</a></li>
+													<li><a href="corporate-recruitment.html">Corporate Rrecruitment</a></li>
+													<li><a href="hr-consultancy.html">HR Consultancy</a></li>
+													<li><a href="resume.html">Profile Development</a></li>
+	
+												</ul>
+											</div>
+										</div>
+	
+	
+									</li>
+								</ul>
+							</li>
+	
+						</ul>
+	
+	
+					</div>
+				</div>
+	
+			</nav>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<style>
+
+			h2,h4{
+				font-family: Montserrat; font-size: x-large;
+				}
+			p{
+				font-size: medium;
+			}
+			</style>
+			<!-- Title Header Start -->
+			<div class="clearfix"></div>
+			<div class="home-three-banners" style="background-image:url(img/corporate-header.jpg);">
+				<div class="container">
+					<div class="simple-banner-caption">
+						<div class="col-md-8 col-sm-10 banner-text">
+						
+							<h1>Coming Soon <span> </span></h1>
+		
+							<p> We will be right back soon. Stay connected with us. </p>
+		
+								<div class="col-md-4 col-sm-5">
+									<button type="submit" class="btn btn-primary">Get in Touch</button>
+								</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="clearfix"></div>
+			<!-- Title Header End -->
+
+
+
+			<!-- Sliding Text Starts-->
+
+
+			<!--Sliding Text Ends-->
+	
+			<!-- End Sign Up Window -->
+			
+			
+			<!-- Scripts
+			================================================== -->
+			<script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/viewportchecker.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootsnav.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/select2.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/wysihtml5-0.3.0.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootstrap-wysihtml5.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/datedropper.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/dropzone.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/loader.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/owl.carousel.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/slick.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/gmap3.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/jquery.easy-autocomplete.min.js"></script>
+			
+			<!-- Custom Js -->
+			<script src="assets/js/custom.js"></script>
+			<script src="assets/js/jQuery.style.switcher.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#styleOptions').styleSwitcher();
+				});
+			</script>
+			<script>
+				function openRightMenu() {
+					document.getElementById("rightMenu").style.display = "block";
+				}
+
+				function closeRightMenu() {
+					document.getElementById("rightMenu").style.display = "none";
+				}
+			</script>
+		</div>
+	</body>
+
+<!-- search-job41:11-->
 </html>
